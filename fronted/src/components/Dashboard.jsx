@@ -59,8 +59,8 @@ function Dashboard() {
                 <p>{item.lAmount}</p>
               </div>
               <div className='px-2'>
-                <p className='text-green-500'>{item.hAmount}</p>
-                <p className='text-green-500'>{item.rNumber}</p>
+                <p className='text-green-500 p-2'>{item.lAmount}</p>
+                <p className='text-green-500 p-2'>{item.rNumber}</p>
               </div>
             </div>
           </Link>

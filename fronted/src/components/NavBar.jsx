@@ -10,7 +10,7 @@ function NavBar() {
 
   const handleSignOut = async() =>{
     try {
-      const res = await axios.post('api/auth/signout')
+      const res = await axios.post('/api/auth/signout')
       navigate('/login')
     } catch (e) {
       console.log("error", e)

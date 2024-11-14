@@ -466,6 +466,15 @@ function Register() {
                                     className='w-[350px] h-8 bottom-1 rounded-md items-center py-1'
                                 />
                             </div>
+                            <div className='flex flex-col '>
+                                <Label htmlFor='rrtoagent1' className='p-1 text-md' value='RTO Agent' />
+                                <input
+                                    id='rrtoAgent1'
+                                    name='rrtoAgent1'
+                                    type='text'
+                                    className='w-[350px] h-8 bottom-1 rounded-md items-center py-1'
+                                />
+                            </div>
 
                                  <div className='flex flex-col '>
                                 <Label htmlFor='fc1' className='p-1 text-md' value='FC Amount' />

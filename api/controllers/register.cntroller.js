@@ -43,6 +43,7 @@ export const register = async (req, res, next) => {
             rrHold1,
             rrtoCharges1,
             rkiharas1,
+            rrtoAgent1,
             bpBank1,
             bfc2,
             boAmount,
@@ -111,6 +112,7 @@ export const register = async (req, res, next) => {
             newCarD,
             prHold,
             pfc,
+            rrtoAgent1,
             pnoc,
             ppBank,
             pnpt,
@@ -229,4 +231,19 @@ export const updateRegister = async (req, res, next) => {
         next(error);
     }
 };
+export const deleteRegister = async (req, res, next) => {
+    try {
+        const { registerId } = req.params;
+
+        // Find the registration by ID and delete it
+        const registration = await Registration.findByIdAndDelete(registerId);
+        if (!registration) {
+            return res.status(404).json({ error: 'Registration not found' });
+        }
+
+        res.status(200).json({ message: 'Registration deleted successfully' });
+    } catch (error) {
+        next(error);
+    }
+}
 

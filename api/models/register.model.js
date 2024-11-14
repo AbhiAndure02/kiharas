@@ -121,6 +121,9 @@ const registerSchema = new mongoose.Schema({
     rrtoCharges1:{
         type:String
     },
+    rrtoAgent1:{
+        type:String
+    },
     rkiharas1:{
         type:String
     },
