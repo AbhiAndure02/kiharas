@@ -11,7 +11,7 @@ const DataPage = () => {
     const [error, setError] = useState(null); // State to handle errors
     const [openModal, setOpenModal] = useState(false);
 
-
+//hello
 
     useEffect(() => {
         const getRegiData = async () => {
